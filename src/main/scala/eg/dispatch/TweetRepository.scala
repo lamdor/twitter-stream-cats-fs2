@@ -5,7 +5,7 @@ import dispatch.{Http, Req}
 import dispatch.as.repatch.{twitter => asTwitter}
 import dispatch.url
 import eg._
-import fs2.{Strategy, Stream, Task}
+import fs2.{Stream, Task}
 import org.json4s.JValue
 import repatch.twitter.request._
 import repatch.twitter.response.{Tweet => TTweet}

@@ -10,6 +10,7 @@ libraryDependencies ++= Seq(
 
   "org.typelevel" %% "cats" % "0.8.1",
   "co.fs2" %% "fs2-core" % "0.9.2",
+  "com.github.scopt" %% "scopt" % "3.5.0",
 
   "org.typelevel" %% "discipline" % "0.7.1" % Test,
   "org.specs2" %% "specs2-core" % "3.8.5.1" % Test,
@@ -24,5 +25,7 @@ addCommandAlias("testExcludeSlow", "testOnly * -- exclude slow")
 
 scalacOptions ++= Seq(
   "-language:higherKinds",
-  "-language:implicitConversions"
+  "-language:implicitConversions",
+  "-language:postfixOps",
+  "-feature"
 )
